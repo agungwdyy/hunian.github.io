@@ -1,0 +1,263 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+:-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #e0e0e0;
+}
+
+li,
+a {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  width: 100%;
+  height: 65px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  background-color: #6c63ff;
+  position: fixed;
+  top: 0;
+}
+
+header h1 {
+  align-self: center;
+}
+
+.nav-btn {
+  align-self: center;
+}
+
+.nav-btn li {
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.nav-btn li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-btn li a:hover {
+  color: black;
+}
+
+header .menu-icon {
+  font-size: 30px;
+  color: white;
+  align-self: center;
+  display: none;
+}
+
+.top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin-top: 100px;
+}
+
+.title {
+  align-self: center;
+}
+
+.top-wrapper img {
+  width: 400px;
+}
+
+.about {
+  display: flex;
+  padding: 0 24px;
+  margin-top: 80px;
+}
+
+.about-title {
+  padding: 0 24px;
+  align-self: center;
+  text-align: right;
+}
+
+.about img {
+  width: 400px;
+}
+
+.services {
+  padding: 0 24px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.service-list {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.service-list img {
+  width: 200px;
+}
+
+.contact {
+  margin: 0 auto;
+  width: 80%;
+  padding: 0 24px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.contact button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+}
+
+.contact button:hover {
+  color: white;
+  background-color: #6c63ff;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  width: 60%;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 65px;
+  color: white;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #6c63ff;
+}
+
+.social-media,
+.footer-title {
+  align-self: center;
+}
+
+.social-media p {
+  display: inline-block;
+  font-size: 1.3em;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.social-media p:hover {
+  transition: all 0.3s ease 0s;
+  color: black;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+  .nav-btn {
+    display: none;
+  }
+
+  header .menu-icon {
+    display: block;
+  }
+
+  .title h1 {
+    font-size: 24px;
+  }
+
+  .title p {
+    font-size: 12px;
+  }
+
+  .top-wrapper img {
+    width: 270px;
+  }
+
+  .about img {
+    width: 270px;
+  }
+
+  .about-title h1 {
+    font-size: 24px;
+  }
+
+  .about-title p {
+    font-size: 12px;
+  }
+
+  .service-list {
+    width: 100%;
+  }
+
+  .service-list img {
+    width: 200px;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 90%;
+  }
+
+  .social-media p {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1020px) {
+  .services > .container {
+    display: flex;
+    margin-right: 20px;
+  }
+}
